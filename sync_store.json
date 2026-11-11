@@ -1,4 +1,118 @@
 {
+  "2669656": {
+    "code": "2669656",
+    "updatedAt": 1794374556728,
+    "data": {
+      "settings": {
+        "focusDuration": 25,
+        "shortBreakDuration": 5,
+        "longBreakDuration": 15,
+        "longBreakInterval": 4,
+        "autoStartBreaks": false,
+        "autoStartPomodoros": false,
+        "soundAlert": "singingBowl",
+        "volume": 0.8,
+        "ambientSound": "none",
+        "ambientVolume": 0.3
+      },
+      "sessions": [
+        {
+          "id": "session-1794334087780-zaqg",
+          "timestamp": 1794334087780,
+          "durationMinutes": 25,
+          "mode": "focus",
+          "category": "Deep Work",
+          "completed": true
+        },
+        {
+          "id": "demo-1",
+          "timestamp": 1794326600191,
+          "durationMinutes": 25,
+          "mode": "focus",
+          "category": "Deep Work",
+          "taskTitle": "Project Architecture & Spec",
+          "completed": true
+        },
+        {
+          "id": "demo-2",
+          "timestamp": 1794319400191,
+          "durationMinutes": 25,
+          "mode": "focus",
+          "category": "Coding",
+          "taskTitle": "Frontend Component Layout",
+          "completed": true
+        },
+        {
+          "id": "demo-3",
+          "timestamp": 1794236600191,
+          "durationMinutes": 25,
+          "mode": "focus",
+          "category": "Coding",
+          "taskTitle": "Database Schema & Server Sync",
+          "completed": true
+        },
+        {
+          "id": "demo-4",
+          "timestamp": 1794229400191,
+          "durationMinutes": 25,
+          "mode": "focus",
+          "category": "Reading",
+          "taskTitle": "Performance Optimizations",
+          "completed": true
+        },
+        {
+          "id": "demo-5",
+          "timestamp": 1794153800191,
+          "durationMinutes": 50,
+          "mode": "focus",
+          "category": "Deep Work",
+          "taskTitle": "Continuous Integration Flow",
+          "completed": true
+        },
+        {
+          "id": "demo-6",
+          "timestamp": 1794060200191,
+          "durationMinutes": 25,
+          "mode": "focus",
+          "category": "Writing",
+          "taskTitle": "Release Documentation",
+          "completed": true
+        },
+        {
+          "id": "demo-7",
+          "timestamp": 1793977400191,
+          "durationMinutes": 25,
+          "mode": "focus",
+          "category": "Coding",
+          "taskTitle": "Unit Test Coverage",
+          "completed": true
+        }
+      ],
+      "tasks": [],
+      "playlist": {
+        "songs": [
+          {
+            "id": "song-1794333827949-uuqj",
+            "url": "https://youtu.be/JgDNFQ2RaLQ?si=fsBAIWa6hIYnzAdd",
+            "title": "Focus Video (JgDNFQ2RaLQ)",
+            "videoId": "JgDNFQ2RaLQ",
+            "addedAt": 1794333827949
+          }
+        ],
+        "currentIndex": 0,
+        "autoPlayOnFocus": true,
+        "loop": true,
+        "isPlaying": true,
+        "volume": 80,
+        "url": "https://www.youtube.com/watch?v=jfKfPfyJRdk",
+        "customTitle": "Lofi Girl - Chill Beats to Study/Relax"
+      },
+      "dailyGoalMinutes": 120,
+      "dailyGoalPomodoros": 6,
+      "theme": "light",
+      "updatedAt": 1794374555527
+    }
+  },
   "5303607": {
     "code": "5303607",
     "updatedAt": 1794330521157,

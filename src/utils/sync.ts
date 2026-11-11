@@ -246,17 +246,26 @@ export function saveLocalData(data: SyncDataPayload) {
 export async function fetchRemoteSyncData(code: string): Promise<SyncDataPayload | null> {
   const clean = code.replace(/\D/g, '');
   if (clean.length !== 7) {
-    throw new Error('Code must be 7 digits');
+    return null;
   }
 
-  const res = await fetch(`/api/sync/${clean}`);
-  if (!res.ok) {
-    if (res.status === 404) return null;
-    throw new Error(`Sync error: ${res.statusText}`);
-  }
+  try {
+    const res = await fetch(`/api/sync/${clean}`);
+    if (!res.ok) {
+      return null;
+    }
 
-  const json = await res.json();
-  return json.data || null;
+    const contentType = res.headers.get('content-type');
+    if (!contentType || !contentType.includes('application/json')) {
+      return null;
+    }
+
+    const json = await res.json();
+    return json.data || null;
+  } catch (err) {
+    console.warn('[Sync] Remote sync unavailable (e.g. static hosting like GitHub Pages):', err);
+    return null;
+  }
 }
 
 export async function pushRemoteSyncData(code: string, data: SyncDataPayload): Promise<boolean> {
